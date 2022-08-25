@@ -1,3 +1,49 @@
 mixin header()
-    header.header 
-        p header
+    header.header
+        nav.header__nav.container
+            a(href="index.html").header__logo 
+                img(src="@img/logo.png", alt="")
+            .header__list 
+                li.header__li
+                    a(href="index.html").header__link.active Главная 
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Продукты 
+                        img(src="@img/down-arrow.svg", alt="")
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Продукты</a></li>
+                        <li><a class="dropdown-item" href="#">Продукты</a></li>
+                        <li><a class="dropdown-item" href="#">Продукты</a></li>
+                    </ul>
+                </div>
+                li.header__li
+                    a(href="downloads.html").header__link.active Загрузки 
+                li.header__li
+                    a(href="contacts.html").header__link.active Контакты  
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    img(src="@img/russia-icon.png", alt="")
+                    | RUS
+                    img(src="@img/down-arrow.svg", alt="")
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            img(src="@img/russia-icon.png", alt="")
+                            | RUS
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            img(src="@img/russia-icon.png", alt="")
+                            | RUS
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            img(src="@img/russia-icon.png", alt="")
+                            | RUS
+                        </a>
+                    </li>
+                </ul>
+            </div>

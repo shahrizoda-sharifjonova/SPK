@@ -1,1 +1,19 @@
-// Шапка
+.header{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 310px;
+    padding-right: 310px;
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+        column-gap: 6px;
+    }
+    &__link{
+        padding: 7.5px 14px;
+    }
+}
