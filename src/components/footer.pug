@@ -1,2 +1,39 @@
 mixin footer()
     footer.footer
+        nav.footer__nav.container
+            a(href="index.html").footer__logo 
+                img(src="@img/logo.png", alt="").disable-sm
+            .footer__list 
+                li.footer__li.active
+                    a(href="index.html").footer__link.active Главная 
+                <div class="dropdown first">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Продукты 
+                        img(src="@img/down-arrow.svg", alt="")
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Утилиты для приёма денежных средств</a></li>
+                        <li><a class="dropdown-item" href="#">SpkPhotobooth</a></li>
+                        <li><a class="dropdown-item" href="#">SpkScreen</a></li>
+                    </ul>
+                </div>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-footer" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Продукты
+                                img(src="@img/down-arrow.svg", alt="")
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <li><a class="dropdown-item" href="#">Утилиты для приёма денежных средств</a></li>
+                            <li><a class="dropdown-item" href="#">SpkPhotobooth</a></li>
+                            <li><a class="dropdown-item" href="#">SpkScreen</a></li>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                li.footer__li
+                    a(href="downloads.html").footer__link Загрузки 
+                li.footer__li
+                    a(href="contacts.html").footer__link Контакты
+            p.footer__p © 2022 - SmartPhotoKiosk 
