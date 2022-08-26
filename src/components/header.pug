@@ -2,48 +2,63 @@ mixin header()
     header.header
         nav.header__nav.container
             a(href="index.html").header__logo 
-                img(src="@img/logo.png", alt="")
+                img(src="@img/logo.png", alt="").disable-sm
+                img(src="@img/logo-sm.png", alt="").enable-sm
             .header__list 
                 li.header__li
                     a(href="index.html").header__link.active Главная 
-                <div class="dropdown">
+                <div class="dropdown first">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Продукты 
                         img(src="@img/down-arrow.svg", alt="")
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Продукты</a></li>
-                        <li><a class="dropdown-item" href="#">Продукты</a></li>
-                        <li><a class="dropdown-item" href="#">Продукты</a></li>
+                        <li><a class="dropdown-item" href="#">Утилиты для приёма денежных средств</a></li>
+                        <li><a class="dropdown-item" href="#">SpkPhotobooth</a></li>
+                        <li><a class="dropdown-item" href="#">SpkScreen</a></li>
                     </ul>
+                </div>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Продукты
+                                img(src="@img/down-arrow.svg", alt="")
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <li><a class="dropdown-item" href="#">Утилиты для приёма денежных средств</a></li>
+                            <li><a class="dropdown-item" href="#">SpkPhotobooth</a></li>
+                            <li><a class="dropdown-item" href="#">SpkScreen</a></li>
+                        </div>
+                        </div>
+                    </div>
                 </div>
                 li.header__li
                     a(href="downloads.html").header__link.active Загрузки 
                 li.header__li
-                    a(href="contacts.html").header__link.active Контакты  
-            <div class="dropdown">
+                    a(href="contacts.html").header__link.active Контакты
+                p.header__p © 2022 - SmartPhotoKiosk  
+            <div class="dropdown second">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    img(src="@img/russia-icon.png", alt="")
+                    img(src="@img/russia-icon.png", alt="").first
                     | RUS
                     img(src="@img/down-arrow.svg", alt="")
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                     <li>
-                        <a class="dropdown-item" href="#">
+                        <a class="dropdown-item first active" href="#">
                             img(src="@img/russia-icon.png", alt="")
                             | RUS
                         </a>
                     </li>
                     <li>
                         <a class="dropdown-item" href="#">
-                            img(src="@img/russia-icon.png", alt="")
-                            | RUS
-                        </a>
-                    </li>
-                    <li>
-                        <a class="dropdown-item" href="#">
-                            img(src="@img/russia-icon.png", alt="")
-                            | RUS
+                            img(src="@img/usa-icon.svg", alt="")
+                            | ENG
                         </a>
                     </li>
                 </ul>
             </div>
+            
+            .menu 
+                span.menu-btn
