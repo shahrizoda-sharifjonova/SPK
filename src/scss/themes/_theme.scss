@@ -26,9 +26,7 @@ body{
     .main{
         flex: 1 1 auto;
     }
-    &#wrapperMain{
-        background: #F7F7F8;
-    }
+    background: #F7F7F8;
 }
 button{
     background: none;
@@ -40,4 +38,7 @@ a{
 }
 li{
     list-style: none;
+}
+p, h1, h2{
+    margin-bottom: 0;
 }
