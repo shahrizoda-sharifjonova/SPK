@@ -25,6 +25,9 @@ body{
     flex-direction: column;
     .main{
         flex: 1 1 auto;
+        &#mainContacts{
+            overflow-y: hidden;
+        }
     }
     background: #F7F7F8;
 }

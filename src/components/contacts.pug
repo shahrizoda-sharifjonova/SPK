@@ -1,4 +1,10 @@
 mixin contacts()
     .contacts 
         .contacts__body.container 
-            
+            .contacts__left 
+                h2.contacts__title Пожалуйста, напишите нам, если у вас есть какие-либо вопросы по нашему программному обеспечению
+                .contacts__content 
+                    p.contacts__p E-mail
+                    a(href="mailto::support@smartphotokiosk.com").contacts__link support@smartphotokiosk.com
+                .contacts__img 
+                    img(src="@img/contacts-img.png", alt="")
