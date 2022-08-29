@@ -155,7 +155,7 @@
 }
 
 .header__logo {
-  z-index: 2;
+  z-index: 3;
 }
 
 .header__logo img.disable-sm {
@@ -204,7 +204,7 @@
 }
 
 .header .dropdown {
-  z-index: 2;
+  z-index: 3;
 }
 
 .header .dropdown.first .btn {
@@ -457,7 +457,7 @@
   border-radius: 10px;
   position: relative;
   padding: 14px 12px;
-  z-index: 2;
+  z-index: 3;
 }
 
 .header .menu-btn {
@@ -2124,6 +2124,133 @@
   line-height: 0;
 }
 
+.photos {
+  padding-left: 310px;
+  padding-right: 310px;
+}
+
+.photos__top-left {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+}
+
+.photos__top-title {
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 43px;
+  color: #0E141D;
+}
+
+.photos__top-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #576171;
+  margin-bottom: 20px;
+}
+
+.photos__top-list {
+  padding-left: 0;
+}
+
+.photos__top-li {
+  position: relative;
+  padding-left: 32px;
+  max-width: 580px;
+  width: 100%;
+}
+
+.photos__top-li::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #1265D1;
+  -webkit-box-shadow: 0px 4px 13px rgba(20, 136, 243, 0.5);
+          box-shadow: 0px 4px 13px rgba(20, 136, 243, 0.5);
+}
+
+.photos__top-li:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+.photos__top-li a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #1265D1;
+}
+
+.photos .programms__row {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+
+.photos .programms__functions {
+  z-index: 1;
+}
+
+.photos .programms__functions-img img {
+  border-radius: 20px;
+}
+
+.photos .programms__functions-wrapper {
+  width: calc(50% - 13px);
+}
+
+.photos .programms__functions-wrapper p {
+  width: 100%;
+}
+
+.photos .programms__functions-list {
+  padding-left: 15px;
+  margin-top: 10px;
+}
+
+.photos .programms__functions-li {
+  padding-left: 32px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #FAFAFA;
+  position: relative;
+}
+
+.photos .programms__functions-li::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background: rgba(250, 250, 250, 0.3);
+  border: 1px solid #FAFAFA;
+  -webkit-box-shadow: 0px 2px 14px #FFFFFF;
+          box-shadow: 0px 2px 14px #FFFFFF;
+  border-radius: 50%;
+}
+
+.photos .programms__functions-li:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -2242,6 +2369,11 @@ h2 {
   }
 
   .contacts {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .photos {
     padding-right: 0;
     padding-left: 0;
   }
@@ -2368,7 +2500,7 @@ h2 {
     transition: 300ms ease;
     padding-right: 15px;
     padding-left: 15px;
-    z-index: 1;
+    z-index: 2;
   }
 
   .header__li:not(:last-of-type) {
@@ -2749,6 +2881,38 @@ h2 {
   .contacts__img {
     display: block;
   }
+
+  .photos__top-left {
+    width: 100%;
+    padding: 20px 30px;
+  }
+
+  .photos__top-title {
+    text-align: center;
+  }
+
+  .photos__top-desc {
+    text-align: center;
+  }
+
+  .photos__top-list {
+    max-width: 400px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .photos .programms__functions::before {
+    height: 175px;
+  }
+
+  .photos .programms__functions-p:last-of-type {
+    margin-bottom: 20px;
+  }
+
+  .photos .programms__functions-wrapper {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2973,6 +3137,10 @@ h2 {
     font-size: 24px;
     line-height: 35px;
   }
+
+  .photos .programms__functions-list {
+    padding-left: 10px;
+  }
 }
 
 @media (max-width: 389px) {
@@ -2980,6 +3148,10 @@ h2 {
     font-size: 18px;
     line-height: 22px;
     padding: 18px;
+  }
+
+  .photos__top-left {
+    padding: 20px 15px;
   }
 }
 

@@ -1,4 +1,48 @@
 mixin photos()
     .photos 
-        .photos__body.container 
-            
+        .photos__body.container
+            .programms__row
+                .photos__top-left 
+                    h2.photos__top-title SpkPhotobooth
+                    p.photos__top-desc Программное обеспечения для создания фотобудки
+                    ul.photos__top-list 
+                        li.photos__top-li Используется для организации работы фотобудки
+                        li.photos__top-li Работает как Windows-приложение
+                        li.photos__top-li Позволяет принимать оплату с использованием программ, входящих в состав #[a(href="funds.html") «Утилит для приёма денежных средств»]
+                .programms__content
+                    .programms__items 
+                        .programms__item    
+                            p.programms__item-subtitle Дата выпуска
+                            p.programms__item-p 05.07.2022
+                        .programms__item    
+                            p.programms__item-subtitle Размер файла
+                            p.programms__item-p 0.4 Мб
+                    .programms__wrapper 
+                        a(href="#!").programms__btn Загрузить 
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 14V6M12 14L9.2 11.3333M12 14L14.8 11.3333M5 15.3333L5.4347 16.99C5.51041 17.2785 5.68518 17.5345 5.93123 17.7175C6.17729 17.9005 6.48051 18 6.7927 18H17.2073C17.5195 18 17.8227 17.9005 18.0688 17.7175C18.3148 17.5345 18.4896 17.2785 18.5653 16.99L19 15.3333" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        p.programms__p v. 1.1.12.0
+            .programms__functions 
+                h2.programms__functions-title Функциональные возможности основных программ
+                .programms__functions-img 
+                    img(src="@img/photos-img.png", alt="")
+                .programms__functions-content 
+                    p.programms__functions-p Поддерживается фотографирование с использованием камеры Canon и Web-камеры
+                    p.programms__functions-p Поддерживается один или несколько шаблонов печати с возможность выбора пользователем
+                    p.programms__functions-p В интерфейсе пользователя может быть один или нескольких языков интерфейса с возможностью выбора пользователем
+                    p.programms__functions-p Мониторинг состояния оборудования (купюроприемники, принтеры и т. д.), отображение экрана с ошибкой в случае каких-либо проблем
+                    p.programms__functions-p Возможность настройки снимков пользователем перед печатью
+                    p.programms__functions-p Формирование электронных чеков
+                    p.programms__functions-p Отправка администратору сообщений по электронной почте об изменении состояния оборудования
+                    p.programms__functions-p Отправка администратору сообщений по электронной почте со статистикой использования программы (количество напечатанных страниц, количество полученных денежных средств)
+                    p.programms__functions-p Возможность работы в режиме «без денег»
+                    p.programms__functions-p Ведение лога работы программы
+                    p.programms__functions-p Настраиваемый интерфейс пользователя
+                    .programms__functions-wrapper
+                        p.programms__functions-p Интерфейс администратора позволяет:
+                        .programms__functions-list 
+                            li.programms__functions-li Посмотреть подробное состояние системы и список всех ошибок
+                            li.programms__functions-li Запустить бесплатную сессию
+                            li.programms__functions-li Сделать тестовый снимок для проверки работы камеры
+                            li.programms__functions-li Повторно напечатать ранее распечатанные фотографии
