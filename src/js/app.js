@@ -13,7 +13,7 @@ var mySwiper = new Swiper('.photos__swiper', {
     slidesPerView: 1,
     spaceBetween: 20,
     centeredSlides: true,
-    initialSlide: 3,
+    initialSlide: 1,
     navigation: {
         nextEl: '.photos__button-next',
         prevEl: '.photos__button-prev',

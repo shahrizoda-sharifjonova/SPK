@@ -58,7 +58,52 @@ mixin photos()
                             img(src="@img/photos-img-1.svg", alt="")
                 .photos__buttons 
                     .swiper-button-prev.photos__button-prev 
-                    .swiper-button-next.photos__button-next 
+                    .swiper-button-next.photos__button-next
+            h2.photos__tab-title Сравнение версий
+            .photos__tab 
+                .photos__tab-btns
+                    .photos__line_2.btn_line
+                        .photos__tab-div 
+                            p.photos__tab-text SPKPhotobooth 
+                    .photos__line_3.btn_line
+                        .photos__tab-div.second 
+                            p.photos__tab-text SPKPhotobooth
+                            button(type="button").photos__tab-btn + Advanced functions 
+                .photos__tab-content 
+                    .photos__tab-item 
+                        .photos__tab-left 
+                            p.photos__tab-subtitle.photos__line_1 Приём денежных средств
+                        .photos__tab-right 
+                            p.photos__tab-p.photos__line_2 Только наличные  
+                            p.photos__tab-p.photos__line_3 Любые способы
+                    .photos__tab-item 
+                        .photos__tab-left 
+                            p.photos__tab-subtitle.photos__line_1 Шаблоны печати 
+                        .photos__tab-right 
+                            p.photos__tab-p.photos__line_2 Только #[span один]  
+                            p.photos__tab-p.photos__line_3 Один или #[span несколько]
+                    .photos__tab-item 
+                        .photos__tab-left 
+                            p.photos__tab-subtitle.photos__line_1 Цветовой профиль  
+                        .photos__tab-right 
+                            p.photos__tab-p.photos__line_2 Только #[span один]  
+                            p.photos__tab-p.photos__line_3 Один или #[span несколько]
+                    .photos__tab-item 
+                        .photos__tab-left 
+                            p.photos__tab-subtitle.photos__line_1 Редактирование страниц для печати пользователем	
+                        .photos__tab-right
+                            .photos__tab-line.photos__line_2 
+                                p.photos__tab-button.no Нет 
+                            .photos__tab-line.photos__line_3     
+                                p.photos__tab-button.yes Да
+                    .photos__tab-item 
+                        .photos__tab-left 
+                            p.photos__tab-subtitle.photos__line_1 Стоимость	   
+                        .photos__tab-right
+                            .photos__tab-line.photos__line_2 
+                                p.photos__tab-button.yes Бесплатно
+                            .photos__tab-line.photos__line_3   
+                                p.photos__tab-button.blue $99 #[span $199] 
             .photos__row 
                 h2.photos__title 
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -75,3 +120,9 @@ mixin photos()
                     .photos__item 
                         h2.photos__item-subtitle По договоренности
                         p.photos__item-desc Настройка пользовательского интерфейса по вашим дизайн-макетам
+            .programms__note 
+                .programms__note-img 
+                    img(src="@img/photos-note-img.png", alt="")
+                .programms__note-content 
+                    h2.programms__note-title Примечание
+                    p.programms__note-desc Бесплатная версия программного обеспечения может использоваться, в том числе, в коммерческих целях без каких-либо ограничений. #[br] #[br] Лицензия на платную версию программного обеспечения предназначена для использования на одном компьютере. Включает в себя техническую поддержку и получение обновлений в течение одного года.
