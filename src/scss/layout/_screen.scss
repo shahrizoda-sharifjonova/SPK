@@ -1,4 +1,4 @@
-.photos{
+.screen{
     padding-left: 310px;
     padding-right: 310px;
     padding-bottom: 80px;
@@ -155,7 +155,7 @@
         font-weight: 700;
         font-size: 24px;
         line-height: 35px;
-        color: #0E141D !important;
+        color: #0E141D;
         @include media(1200){
             margin-bottom: 30px;
         }
@@ -276,22 +276,23 @@
         box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.04);
         border-radius: 30px;
         margin-bottom: 30px;
-        @include media(992){
+        @include media(1200){
             flex-direction: column;
             align-items: stretch;
             padding-left: 0;
-            padding-top: 40px;
+            padding-top: 25px;
         }
     }
     &__subtitle{
         font-weight: 700;
         font-size: 30px;
         line-height: 43px;
-        color: #1265D1;
+        color: #43B51B;
         margin-bottom: 0 !important;
-        @include media(992){
+        position: relative;
+        @include media(1200){
             text-align: center;
-            margin-bottom: 40px !important;
+            margin-bottom: 25px !important;
         }
         @include media(768){
             font-weight: 700;
@@ -299,30 +300,20 @@
             line-height: 43px;
         }
         @include media(575){
-            margin-left: -15px;
+            margin-left: 15px;
         }
         svg{
-            position: absolute;
-            &:nth-of-type(1){
-                transform: translate(-15px,22px);
-            }
-            &:nth-of-type(2){
-                transform: translate(-32px,-30px);
-                @include media(768){
-                    width: 69px;
-                    height: 69px;
-                }
-            }
+            transform: translateX(-70%);
         }
     }
     &__content{
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        padding: 24px 30px;
-        background: #1265D1;
+        padding: 24px;
+        background: #43B51B;
         border-radius: 30px;
-        @include media(768){
+        @include media(1200){
             flex-direction: column;
             align-items: center;
         }
@@ -331,26 +322,26 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        @include media(768){
+        @include media(1200){
             align-items: center;
         }
         &:not(:last-of-type){
             margin-right: 30px;
-            @include media(768){
+            @include media(1200){
                 margin-right: 0;
                 margin-bottom: 30px;
             }
         }
         &-subtitle{
             font-weight: 700;
-            font-size: 24px;
+            font-size: 23px;
             line-height: 100%;
             color: #FAFAFA;
             margin-bottom: 8px;
             display: flex;
             align-items: flex-start;
             column-gap: 4px;
-            @include media(768){
+            @include media(1200){
                 text-align: center;
             }
             span{
@@ -370,7 +361,7 @@
             opacity: 0.7;
             max-width: 271px;
             width: 100%;
-            @include media(768){
+            @include media(1200){
                 text-align: center;
             }
         }
@@ -423,7 +414,7 @@
             }
             &.second{
                 padding: 10px 16px;
-                .photos__tab-text{
+                .screen__tab-text{
                     margin-bottom: 5px;
                 }
             }
@@ -575,6 +566,30 @@
                     width: 100%;
                     min-width: 100%;
                 }
+            }
+        }
+    }
+    &__price{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px 20px;
+        background: #FAFAFA;
+        border-radius: 10px;
+        &-p{
+            display: flex;
+            align-items: flex-start;
+            column-gap: 5px;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 100%;
+            color: #0E141D;
+            span{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 100%;
+                text-decoration-line: line-through;
+                color: #576171;
             }
         }
     }
