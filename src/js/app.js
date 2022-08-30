@@ -9,26 +9,31 @@ const swiper = new Swiper();
 var mySwiper = new Swiper('.photos__swiper', {
     modules: [Navigation],
     loop: true,
-    speed: 1000,
-    autoplay: {
-        delay: 3000,
-    },
-    effect: 'coverflow',
-    grabCursor: true,
     centeredSlides: true,
-    slidesPerView: 'auto',
-    coverflowEffect: {
-        rotate: 0,
-        stretch: 80,
-        depth: 200,
-        modifier: 1,
-        slideShadows: false,
-    },
+    slidesPerView: 1,
+    spaceBetween: 20,
+    centeredSlides: true,
+    initialSlide: 3,
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.photos__button-next',
+        prevEl: '.photos__button-prev',
     },
-
+    breakpoints:{
+        1200:{
+            speed: 1000,
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 80,
+                depth: 200,
+                modifier: 1,
+                slideShadows: false,
+            },
+        }
+    }
 })
 
 const menu = document.querySelector('.menu');

@@ -51,8 +51,27 @@ mixin photos()
                 .swiper.photos__swiper  
                     .swiper-wrapper.photos__swiper-wrapper 
                         .swiper-slide.photos__swiper-slide 
-                            img(src="@img/photos-img-1.svg", alt="")
-                        .swiper-slide.photos__swiper-slide 
                             img(src="@img/photos-img-2.svg", alt="")
                         .swiper-slide.photos__swiper-slide 
                             img(src="@img/photos-img-3.svg", alt="")
+                        .swiper-slide.photos__swiper-slide 
+                            img(src="@img/photos-img-1.svg", alt="")
+                .photos__buttons 
+                    .swiper-button-prev.photos__button-prev 
+                    .swiper-button-next.photos__button-next 
+            .photos__row 
+                h2.photos__title 
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.1" d="M0 20.31H32V11.69H0V20.31ZM11.4118 0V32H20.5882V0H11.4118Z" fill="#1265D1"/>
+                    </svg>
+                    | Дополнительно
+                    <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.1" d="M0 43.7934H69V25.2066H0V43.7934ZM24.6066 0V69H44.3934V0H24.6066Z" fill="#1265D1"/>
+                    </svg>
+                .photos__content
+                    .photos__item 
+                        h2.photos__item-subtitle #[span $199] $99
+                        p.photos__item-desc Формирование электронных чеков 
+                    .photos__item 
+                        h2.photos__item-subtitle По договоренности
+                        p.photos__item-desc Настройка пользовательского интерфейса по вашим дизайн-макетам
