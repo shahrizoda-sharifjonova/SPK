@@ -323,7 +323,7 @@
   -webkit-box-shadow: 0px 16px 40px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 16px 40px rgba(0, 0, 0, 0.16);
   border-radius: 20px 20px 0 0;
-  border: none;
+  border: 1px solid transparent;
 }
 
 .header .dropdown.second .btn img {
